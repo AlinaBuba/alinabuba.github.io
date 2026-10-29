@@ -1,0 +1,25 @@
+/* TEAM */
+Psychologist and site owner: Alina Buba
+Contact: https://www.instagram.com/linaklim_eng/
+Development: Yaroslav Podorvanov
+Built with: Claude Code (AI assistant by Anthropic)
+
+/* SITE */
+Last update: 2026/10/29
+Language: Ukrainian (default), English
+Standards: HTML5, CSS3, JavaScript (no frameworks)
+Hosting: GitHub Pages
+Design: "Soft morning" (sage on cream), light and dark themes
+Fonts: Lora and Onest, self-hosted (latin + cyrillic)
+Analytics: Google Analytics 4 with Consent Mode v2, loaded only after consent
+
+/* HOW IT WAS MADE */
+The site is generated, not written by hand. tools/build.py (template, SEO,
+settings) and tools/content.py (UA/EN page text) produce every HTML page,
+sitemap.xml, robots.txt and site.webmanifest. tools/images.py optimises
+photos to WebP and renders the favicon, app icons and og-image with
+headless Chrome. tools/fetch_fonts.py downloads the font subsets.
+tools/check.py verifies internal links, hreflang, JSON-LD and the absence
+of horizontal scroll; tools/shots.py takes desktop and phone screenshots.
+Common commands live in the justfile (just build, serve, shot, check).
+Do not edit the generated HTML by hand: change the tools/ sources and rebuild.
